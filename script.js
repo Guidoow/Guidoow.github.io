@@ -1,6 +1,6 @@
 
 
-
+globalThis.myCards = ["First","Second","Third","Quarter","Fifth"];
 
 
 
@@ -43,7 +43,19 @@ function displayMap(){
 
 window.onload = function(){
     
-    console.log(this)
+    // console.log(this)
+
+    function clickCorrectPosition(){
+        for(i=0; i<myCards.length; i++){
+            document.querySelector(".stair"+myCards[i]).click();
+        };
+        document.querySelector(".cardOn"+myCards[4]).click();
+
+        
+    }
+
+    clickCorrectPosition();
+
 
     var horaInit = new Date();
     globalThis.segundosInit = horaInit.getSeconds();
@@ -91,10 +103,10 @@ function menuDisplayActivator(){
     function moverHover(){
         if(este.classList.contains("hoverForMenuDisplay")){
             este.classList.replace("hoverForMenuDisplay","hoverForMenuHide");
-            console.log("Se displayeo el contenido del menu!");
+            // console.log("Se displayeo el contenido del menu!");
         }else if(este.classList.contains("hoverForMenuHide")){
             este.classList.replace("hoverForMenuHide","hoverForMenuDisplay");
-            console.log("The content of MENU was hidden");
+            // console.log("The content of MENU was hidden");
         };
     };
 
@@ -185,13 +197,13 @@ function cardBackPosition(){
 function cardSelected(position){
 
     globalThis.cardSelectedContainer = document.querySelector(".explainContent");
-    console.log(cardSelectedContainer);
+    // console.log(cardSelectedContainer);
     globalThis.cardsContainer = document.querySelector(".cards");
-    console.log(cardsContainer);
+    // console.log(cardsContainer);
 
     var este=this;
 
-    globalThis.myCards = ["First","Second","Third","Quarter","Fifth"];
+    
 
     globalThis.explain = document.querySelector(".explainContentText");
 
@@ -324,11 +336,11 @@ function cardSelected(position){
         try{
             for(i=0; i<myCards.length; i++){
                 if(position===myCards[i]){
-                    console.log("Se encontro "+myCards[i]);
+                    // console.log("Se encontro "+myCards[i]);
                     este=document.querySelector(".stair"+position);
                     selectorDeCarta(); 
-                    console.log(este);
-                    console.log(myCards[i]);
+                    // console.log(este);
+                    // console.log(myCards[i]);
                 
                     break
                 }else{continue;};
