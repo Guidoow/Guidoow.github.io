@@ -114,8 +114,10 @@ function menuDisplayActivator(){
     moverHover();
 
 }
-
-
+function apretado(){
+    document.querySelector("#menuDisplayActivator").click();
+};
+setTimeout(apretado,4200)
 
 
 
@@ -198,15 +200,15 @@ function cardSelected(position){
                             <br> - Design adaptable to exigence.
                             <br> - Classes and pseudo-classes.
                             <br> - Animations with and without JS (Like this cards!).
-                            <br> - Responsive designs`, 
+                            <br> - Responsive designs.`, 
                         "Second":`Experience on: 
                             <br> - Most elements of the DOM.
                             <br> - Nodes, hierarchy, inheritance.
                             <br> - Logical structuring.
                             <br> - Scripts and styles.
-                            <br> - Media content incorporation`,
+                            <br> - Media content incorporation.`,
                         "Third":`Experience on: 
-                            <br> - Window methods and propertys management (e.g. DOM, events, console, etc.)
+                            <br> - Window methods and propertys management (e.g. DOM, events, console, etc.).
                             <br> - Basic developing concepts: function, variables, data types, modularization, etc. 
                             <br> - Error management, flow control, and so on.
                             <br> - Most about POO: Functions, classes, inheritance,  etc.
@@ -222,7 +224,7 @@ function cardSelected(position){
                             <br> - Management of QuerySets.
                             <br> - basic HTTPRequests.
                             <br> - API deployment.
-                            <br> - ...
+                            
                             `,       
                         "Fifth":`NOTE: I prefer this language among all others i tried.
                         <br> -Experience on:
@@ -231,9 +233,9 @@ function cardSelected(position){
                         <br> - Error management, flow control, and so on.
                         <br> - Brief frameworks introduction: Tkinter, Turtle, NumPY, Pyglet.
                         <br> - Some math knowledge and challenges!.
-                        <br> - ...
+                        <br> - 
                         `, 
-                        "Original":`Pick a card to show the info here! <br>SECTION UNDER CONSTRUCTION... i keep learning every day!`};
+                        "Original":`Pick a card to show the info here! <br>SECTION UNDER CONSTRUCTION... <br>i keep learning every day!`};
 
     function upper(classNumber){
 

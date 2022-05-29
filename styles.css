@@ -22,7 +22,7 @@ body{
     width:100%;
     height:auto;
     /* overflow-x: hidden; */
-    background-color: rgb(250, 250, 255);
+    background-color: rgb(200, 255, 200);
 }   
 main{
     display: flex;
@@ -34,6 +34,8 @@ main{
     width: 100%;
     height: 100%;
     color: rgb(0, 0, 0);
+    background: linear-gradient(150deg, rgb(0,0,0),rgb(0, 51, 109) ) ;
+    overflow-x: hidden;
     
 
 }
@@ -332,37 +334,6 @@ a{
 
 
 
-/* .panel-nav>a::after{
-
-
-
-    display: flex;
-    align-items: center;
-    content: ">";
-    position: absolute;
-    top: -.27em;
-    left: 7.66em;
-    width: 2em;
-    height: 2.9em;
-    background:linear-gradient(90deg,rgba(0, 0, 50, 0.4),rgba(255, 255, 255, 0.0));
-    
-}
-.panel-nav>a:hover::after{
-
-
-    transition: 0.25s;
-    content: "";
-    position: absolute;
-    top: -.27em;
-    left: 7.24em;
-    width: 0em;
-    height: 2.9em;
-    background:linear-gradient(90deg,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
-    
-} */
-
-
-
 /*                                                                  KEY FRAMES FOR PANEL NAVIGATION */
 /*                                                      KEY FRAMES FOR PANEL NAVIGATION */
 /*                                                                  KEY FRAMES FOR PANEL NAVIGATION */
@@ -401,9 +372,11 @@ a{
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 30rem;
+    height: 40rem;
     width: 100%;
-    
+    background-color: rgb(150, 200, 150);
+    clip-path: polygon(2.5% 85%,2.5% 2.5%,97.5% 2.5%,97.5% 100%);
+
 
 }
                                                                                     /* HOME FIRST SECTION */
@@ -458,7 +431,6 @@ a{
     overflow: hidden;
     white-space: nowrap;
     border-right: 2.5px solid rgb(0, 0, 0);
-    /* animation: typingo 2s steps(11, end) , cursoro .3s steps(10, end) 1; */
     animation: typingo 2.7s steps(11, end) , cursoro .25s steps(10, end) 12;
     animation-fill-mode:forwards;
 }
@@ -650,11 +622,12 @@ a{
     align-items: center;
     font-size: 1.5em;
     font-weight: 500;
+    text-shadow: rgba(255, 255, 255, 0.5) -0.05rem 0.075rem 0.3rem;
     /* background-color: rgba(200,200,220,1); */
 }
 .cards{
     position: relative;
-    width: 50%;
+    width: 30%;
     max-width: 50%;
     min-height: 40em;                 
     max-height: auto;
@@ -667,6 +640,7 @@ a{
     justify-content: center;
     align-content: flex-start;
     margin-top: -2em;
+    
 }
 .card{
     transition: 0.35s;
@@ -683,14 +657,15 @@ a{
     height: 10.5rem;                                /* m dsadasd  dsadAsSD */
     margin:0;
     padding: 0rem;
-    background-color: rgba(220, 220, 235, 1);
+    background-color: rgba(255, 255, 255, 1);
     /* border: 0.1rem rgba(170, 170, 195, 1) solid; */
-    border-top: 0.35rem rgba(150, 150, 190, 1) solid;
-    border-bottom: 0.35rem rgba(150, 150, 190, 1) solid;
+    border-top: 0.35rem rgb(110, 110, 235) solid;
+    border-bottom: 0.35rem rgb(110, 110, 235) solid;
     box-shadow: 0rem 0.125rem 0.5rem 0.15rem rgba(0,0,0,0.4);
     text-align: center;
     transform: rotateX(-15deg) rotateY(25deg);
     z-index: 5;
+
 }
 .card:hover{
     transition: 0.2s;
@@ -713,7 +688,7 @@ a{
     width: 90%;
     padding:5%;
     height: 8%;
-    background-color: rgb(200, 200, 220);
+    background-color: rgb(150, 150, 255);
 }
 .cardImg{
     margin:0;
@@ -768,16 +743,14 @@ a{
     height: 13em;
     margin:0;
     padding: 0rem;
-    background-color: rgb(235, 235, 250);
-    /* border: 0.1rem rgba(170, 170, 195, 1) solid; */
-    border-top: 0.45rem rgba(150, 150, 190, 1) solid;
-    border-bottom: 0.45rem rgba(150, 150, 190, 1) solid;
+    background-color: rgb(255, 255, 255);
+    border-top: 0.45rem rgb(110, 110, 235) solid;
+    border-bottom: 0.45rem rgb(110, 110, 235) solid;
     box-shadow: -0.1rem -0.1rem 0.5rem 0.15rem rgba(0,0,0,0.4);
     text-align: center;
     z-index: 1;
     position: absolute;
     top: 1.45rem;
-    /* left: 24.5rem; */
     left: 105%;
     transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
 }
@@ -903,11 +876,10 @@ a{
 .explain{
     height: auto;
     max-height: 100%;
-    width: 50%;
+    width: 70%;
     display: flex;
     position: relative;
     left: 10%;
-
 }
 .explainContent{
     font-family: 'Saira Condensed', sans-serif;
@@ -922,22 +894,23 @@ a{
     position: relative;
     top: 0rem;
     right: 0rem;
-    background-color: rgb(51, 51, 51);
-    box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(0,0,0,0.4);
+    box-shadow: 0rem 0.5rem 0.5rem 0.1rem rgba(0,0,0,0.4);
+
 
 }
 .explainContentHeader{
     width: 100%;
-    height: 2rem;
-    background-color: rgba(150, 150, 190, 1);
+    height: 1rem;
+    background-color: rgb(110, 110, 235);
+    clip-path: polygon(0% 50%,50% 0%,50% 0%,100% 50%,100% 100%, 0% 100%);
 }
 .explainContentText{
     font-weight: 400;
     width: 90%;
     height: 85%;
     padding: 5%;
-    padding-top: 15%;
-    background-color: rgba(210, 210, 220, 1);
+    padding-top: 5%;
+    background-color: rgba(240, 240, 255, 1);
 
 }
 
@@ -962,15 +935,16 @@ a{
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(230, 230, 240);
+    background-color: rgb(255, 255, 255);
     max-width: 40%;
     height: auto;
-    border-top: 0.75rem solid rgba(150, 150, 190, 1);
-    border-bottom: 0.75rem solid rgba(150, 150, 190, 1);
+    border-top: 0.75rem solid rgb(110, 110, 235);
+    border-bottom: 0.75rem solid rgb(110, 110, 235);
     border-radius: 1%;
     box-shadow: 0rem 0.3rem 0.5rem -0.1rem rgba(0,0,0,0.2) ;
-    margin-bottom: 15rem;
+    margin-bottom: 4rem;
     position: relative;
+    
 
 }
 .thirdTitulo{
@@ -1072,13 +1046,13 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     min-width: 90%;
     max-width: 90%;
     height: auto;
-    margin-bottom: 15rem;
+    margin-bottom: 3rem;
     padding: 1%;    
 }
 .quarterFrame{
@@ -1101,11 +1075,11 @@ a{
     transition: 1s;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     padding: 1%;
     font-size: 1rem;
-    min-width: 15%;
-    max-width: 15%;
+    min-width: 90%;
+    max-width: 90%;
     height: 10rem;
     margin-top: 2rem;
     margin-right: 5%;
@@ -1252,10 +1226,10 @@ a{
     height: auto;
     border-radius: 1%;
     box-shadow: 0rem 0.15rem 0.5rem 0rem rgba(0,0,0,0.4) ;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
     position: relative;
-    border-top: 0.75rem solid rgba(150, 150, 190, 1);
-    border-bottom: 0.75rem solid rgba(150, 150, 190, 1);
+    border-top: 0.75rem solid rgb(110, 110, 235);
+    border-bottom: 0.75rem solid rgb(110, 110, 235);
 }
 .fifthTop{
     height: 5rem;
@@ -1309,10 +1283,11 @@ textarea.fifthFormField{
 }
 .fifthFormField#submitButton{
     font-size: 0.85em;
+    background-color: rgb(43, 43, 95);
     cursor: pointer;
 }
 .fifthFormField#submitButton:active{
-    background-color: rgb(43, 43, 95);
+    background-color: rgb(1, 80, 106);
     transform: scale(1.15);
 }
 .fifthSender{
@@ -1446,18 +1421,441 @@ textarea.fifthFormField{
 
 
 
+@media screen and (max-width:3000px) {
+    .first{
+        height: 75rem;
+
+    }
+    .typing {
+        font-size: 2.6em;
+        left:5.1rem;
+        top: 10rem;
+        width: 50rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 2.45em;
+        height: 8rem;
+        left:15rem;
+        top: 23rem;
+        width: 6rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .typing::after{
+        height: 0.3rem;
+        top: 1.1em;
+    }
+    .typingo::after{
+        height: 0.3rem;
+        top: 1.1em;
+    }
+    .detallito{
+        transform: scale(2.1);
+        top: -3rem;
+        left: 30rem;
+    }
 
 
 
 
+
+
+
+
+
+
+    .card{
+        width: 14.5rem;
+        height: 19rem;
+    }
+    .cardText{
+        font-size: 2.2em;
+    }
+    .cardSelected{
+        width: 14.5em;
+        height: 19em;
+        left: 130%;
+    }
+    .stairFirst{
+        left: 11rem;
+        top: 23rem;
+    
+    }
+    .stairSecond{
+        left: 9rem;
+        top: 18rem;
+    
+    }
+    .stairThird{
+        left: 7rem;
+        top: 13rem;
+    }
+    .stairQuarter{
+        left: 5rem;
+        top: 8rem;
+    
+    }
+    .stairFifth{
+        left: 3rem;
+        top: 3rem;
+    
+    }
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 4rem;
+            top: 17rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 130%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 13.5rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 130%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 2rem;
+            top: 10rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 130%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 1rem;
+            top: 6.5rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 130%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 0rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 130%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+
+}
+
+@media screen and (max-width:2300px) {
+    .typing {
+        font-size: 2.2em;
+        left:5.1rem;
+        top: 10rem;
+        width: 44rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 2.1em;
+        height: 8rem;
+        left:15rem;
+        top: 23rem;
+        width: 6rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .detallito{
+        transform: scale(2);
+        top: -3.5rem;
+        left: 17.5rem;
+    }
+
+
+
+    .card{
+        width: 12.5rem;
+        height: 15rem;
+    }
+    .cardText{
+        font-size: 2.2em;
+    }
+    .cardSelected{
+        width: 12.5em;
+        height: 15em;
+        left: 125%;
+    }
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 4rem;
+            top: 17rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 13.5rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 2rem;
+            top: 10rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 1rem;
+            top: 6.5rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 0rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    
+}
+@media screen and (max-width:1900px) {
+    .first{
+        height: 65rem;
+    }
+    .typing {
+        font-size: 2em;
+        left:5.1rem;
+        top: 10rem;
+        width: 40rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 1.9em;
+        height: 8rem;
+        left:15rem;
+        top: 23rem;
+        width: 6rem;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+    .typing::after{
+        height: 0.25rem;
+        top: 1.1em;
+    }
+    .typingo::after{
+        height: 0.25rem;
+        top: 1.1em;
+    } 
+    .detallito{
+        transform: scale(1.8);
+        top: -3.2rem;
+        left: 12rem;
+    }
+
+
+    .card{
+        width: 10.5rem;
+        height: 13rem;
+    }
+    .cardText{
+        font-size: 2em;
+    }
+    .cardSelected{
+        width: 10.5em;
+        height: 13em;
+        /* left: 105%; */
+    }
+    .stairFirst{
+        left: 11rem;
+        top: 19rem;
+    
+    }
+    .stairSecond{
+        left: 9rem;
+        top: 15rem;
+    
+    }
+    .stairThird{
+        left: 7rem;
+        top: 11rem;
+    }
+    .stairQuarter{
+        left: 5rem;
+        top: 7rem;
+    
+    }
+    .stairFifth{
+        left: 3rem;
+        top: 3rem;
+    
+    }
+}
 
 
 @media screen and (max-width:1600px) {
-    
-}
-@media screen and (max-width:1450px) {
+    .first{
+        height: 50rem;
+
+    }
+    .typing {
+        font-size: 1.4em;
+        left:5.1rem;
+        top: 8rem;
+        width: 30rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 1.3em;
+        height: 1em;
+        left:12rem;
+        top: 14rem;
+        width: 6rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+    .typing::after{
+        height: 0.16rem;
+        top: 1.12em;
+    }
+    .typingo::after{
+        height: 0.16rem;
+        top: 1.12em;
+    }
+
+
+    .detallito{
+        transform: scale(1.3);
+        top: -3.2rem;
+        left: 0;
+    }
+    .card{
+        width: 8.5rem;
+        height: 10.5rem;
+    }
+    .cardText{
+        font-size: 1.5em;
+    }
     .cardSelected{
-        left: 103%;
+        width: 8.5em;
+        height: 10.5em;
+        /* left: 105%; */
+    }
+    .stairFirst{
+        left: 11rem;
+        top: 17rem;
+    
+    }
+    .stairSecond{
+        left: 9rem;
+        top: 13.5rem;
+    
+    }
+    .stairThird{
+        left: 7rem;
+        top: 10rem;
+    }
+    .stairQuarter{
+        left: 5rem;
+        top: 6.5rem;
+    
+    }
+    .stairFifth{
+        left: 3rem;
+        top: 3rem;
+    
+    }
+ 
+  
+}
+
+@media screen and (max-width:1450px) {
+
+    .first{
+        height: 36rem;
+
+    }
+    .typing {
+        font-size: 1.2em;
+        left:5.1rem;
+        top: 6rem;
+        width: 23rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 1.1em;
+        height: 1em;
+        left:11rem;
+        top: 12rem;
+        width: 6rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+    .typing::after{
+        height: 0.15rem;
+        top: 1.18em;
+    }
+    .typingo::after{
+        height: 0.15rem;
+        top: 1.18em;
+    }
+
+
+    .detallito{
+        transform: scale(1);
+        top: -2.2rem;
+    }
+
+
+    .cardText{
+        font-size: 1.6em;
     }
     .third{
         font-size: 1.1em;
@@ -1465,21 +1863,117 @@ textarea.fifthFormField{
         max-width: 50%;
     }
 
-
 }
 @media screen and (max-width:1300px) {
+
+
+
+
     .cardSelected{
         font-size: 1.1em;
         width: 11em;
         height: 13.5em;
+        left: 115%;
+    }
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 4rem;
+            top: 17rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 115%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 13.5rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 115%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 2rem;
+            top: 10rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 115%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 1rem;
+            top: 6.5rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 115%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 0rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 115%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
     }
 }
 @media screen and (max-width:1200px) {
+
+    .first{
+        height: 35rem;
+
+    }
+    /* .typing {
+        font-size: 1em;
+        left:5.1rem;
+        top: 6rem;
+        width: 20rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+    .typingo{
+        font-size: 0.9em;
+        height: 1em;
+        left:10rem;
+        top: 10rem;
+        width: 6rem;
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+
+
+    .detallito{
+        transform: scale(1);
+        top: -1.8rem;
+    } */
+
+
     .cardSelected{
         font-size: 1.1em;
         width: 11em;
         height: 13.5em;
-        left: 96%;
+        /* left: 96%; */
     }
 }
 
@@ -1491,13 +1985,12 @@ textarea.fifthFormField{
     .typing {
         left:5.1rem;
         top: 6rem;
-        width: 18rem;
+        width: 22rem;
     
     }
     .typingo{
-        font-size: 0.85em;
-        left:13rem;
-        top: 13rem;
+        left:10rem;
+        top: 10rem;
         width: 5.5rem;
     }
     .typing::after{
@@ -1516,8 +2009,8 @@ textarea.fifthFormField{
 
 
     .detallito{
-        top: 1rem;
-        left: 2.5rem;
+        top: 0rem;
+        left: 1rem;
     }
     .matrix{
         top: 18.2rem;
@@ -1602,10 +2095,77 @@ textarea.fifthFormField{
         font-size: 1.1em;
         width: 11em;
         height: 13.5em;
-        left: 92%;
+        left: 110%;
+    }
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 4rem;
+            top: 17rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 110%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 13.5rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 110%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 2rem;
+            top: 10rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 110%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 1rem;
+            top: 6.5rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 110%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 0rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 110%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
     }
     .cardImg{
         width: 75%;
+    }
+    .cardText{
+        font-size: 1.6em;
     }
 
 
@@ -1712,8 +2272,8 @@ textarea.fifthFormField{
 @media screen and (max-width:1000px) {
 
     .detallito{
-        top: 1rem;
-        left: 0rem;
+        top: 0rem;
+        left: -1rem;
     }
 
 
@@ -1728,7 +2288,7 @@ textarea.fifthFormField{
         font-size: 1.05em;
         width: 10em;
         height: 12.5em;
-        left: 92%;
+        /* left: 92%; */
     }
     .card{
         font-size: 1.1em;
@@ -1752,97 +2312,7 @@ textarea.fifthFormField{
 }
 
 
-
-
-
-
-@media screen and (max-width:900px) {
-
-
-    .detallito{
-        top: 1rem;
-        left: -2.5rem;
-    }
-
-
-
-
-
-    .cardSelected{
-        font-size: 1.05em;
-        width: 9.75em;
-        height: 12em;
-        left: 90%;
-    }
-    .card{
-        font-size: 1.1em;
-        width: 7rem;
-        height: 9rem;
-        
-    }
-
-    @keyframes cardClickFirst {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 11rem;
-            top: 17rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-             left: 90%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickSecond {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 9rem;
-            top: 13.5rem;
-        }
-        to{
-            top: 1.45rem;
-            left: 90%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickThird {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 7rem;
-            top: 10rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 90%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickQuarter {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 5rem;
-            top: 6.5rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 90%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickFifth {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
-            top: 3rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 90%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-
-
-
+@media screen and (max-width:999px) {
 
     .stairFirst{
         position: absolute;
@@ -1873,12 +2343,66 @@ textarea.fifthFormField{
         top: 3rem;
     
     }
+    
+}
+
+
+@media screen and (max-width:900px) {
+
+    .typing {
+        font-size: 1em;
+        left:4rem;
+        top: 5rem;
+        width: 18rem;
+    
+    }
+    .typingo{
+        font-size: 0.9em;
+        left:8rem;
+        top: 9rem;
+        width: 5.5rem;
+    }
+    .typing::after{
+        top: 1.275em;
+    }
+    .typingo::after{
+        top: 1.275em;
+    }
+
+    .detallito{
+        top: 0rem;
+        left: -2.5rem;
+    }
+
+
+
+
+
+    .cardSelected{
+        font-size: 1.05em;
+        width: 9.75em;
+        height: 12em;
+        /* left: 90%; */
+    }
+    .card{
+        font-size: 1.1em;
+        width: 7rem;
+        height: 9rem;
+        
+    }
+
+    
+
+
+
+
+    
 }
 
 @media screen and (max-width:800px) {
 
     .detallito{
-        top: 1rem;
+        top: -.5rem;
         left: -4.5rem;
     }
 
@@ -1887,7 +2411,7 @@ textarea.fifthFormField{
         font-size: 1em;
         width: 9.5em;
         height: 11.5em;
-        left: 87%;
+        left: 105%;
     }
     .card{
         font-size: 1.1em;
@@ -1904,7 +2428,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 87%;
+            left: 105%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -1916,7 +2440,7 @@ textarea.fifthFormField{
         }
         to{
             top: 1.45rem;
-            left: 87%;
+            left: 105%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -1929,7 +2453,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 87%;
+            left: 105%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -1942,7 +2466,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 87%;
+            left: 105%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -1955,7 +2479,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 87%;
+            left: 105%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -1972,22 +2496,18 @@ textarea.fifthFormField{
 }
 @media screen and (max-width:700px) {
     
-    .first{
-        transform: scale(0.85);
-        
-    }
 
     .typing {
-        font-size: 1em;
-        left:-1rem;
+        font-size: 0.9em;
+        left:1rem;
         top: 4rem;
         width: 17.25rem;
     
     }
     .typingo{
-        font-size: 0.9em;
-        left:3.5rem;
-        top: 10rem;
+        font-size: 0.8em;
+        left:4.5rem;
+        top: 8rem;
         width: 5rem;
     }
     .typing::after{
@@ -2000,7 +2520,7 @@ textarea.fifthFormField{
 
 
     .detallito{
-        top: 1rem;
+        top: -1rem;
         left: -5.5rem;
     }
     .menuDisplay::after{
@@ -2018,7 +2538,7 @@ textarea.fifthFormField{
         font-size: 1em;
         width: 9.5em;
         height: 11.5em;
-        left: 85%;
+        left: 95%;
     }
 
 
@@ -2035,7 +2555,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-        left: 85%;
+            left: 95%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -2047,7 +2567,7 @@ textarea.fifthFormField{
         }
         to{
             top: 1.45rem;
-            left: 85%;
+            left: 95%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -2060,7 +2580,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 85%;
+            left: 95%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -2073,7 +2593,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 85%;
+            left: 95%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -2086,7 +2606,7 @@ textarea.fifthFormField{
         to{
             transform: scale(0.7);
             top: 1.45rem;
-            left: 85%;
+            left: 95%;
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
@@ -2118,7 +2638,7 @@ textarea.fifthFormField{
 
 
     .detallito{
-        top: 1rem;
+        top: -1rem;
         left: -7.5rem;
     }
 
@@ -2213,14 +2733,10 @@ textarea.fifthFormField{
 }
 @media screen and (max-width:500px) {
 
-    .first{
-        
-        transform: scale(0.9);
-    }
 
     .typing {
         font-size: 0.7em;
-        left:-1rem;
+        left:0.5rem;
         top: 3.5rem;
         width: 11.5rem;
     
@@ -2241,7 +2757,7 @@ textarea.fifthFormField{
 
 
     .detallito{
-        top: 1rem;
+        top: -1rem;
         left: -8.5rem;
     }
 
@@ -2378,13 +2894,17 @@ textarea.fifthFormField{
 }
 @media screen and (max-width:400px) {
 
-
-
+    .typing{
+        font-size: 0.65em;
+    }
+    .typingo{
+        font-size: 0.6em;
+    }
 
 
 
     .detallito{
-        top: 1rem;
+        top: -1rem;
         left: -9rem;
     }
     .hoverForMenuHide{
@@ -2501,7 +3021,6 @@ textarea.fifthFormField{
 @media screen and (max-width:350px) {
 
     .typingo{
-        font-size: 0.65em;
         left:2.2rem;
         top: 7.5rem;
         width: 5rem;
