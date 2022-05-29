@@ -604,13 +604,11 @@ a{
     align-content: center;
     justify-content: space-around;
     align-items: flex-start;
-    /* width: 32em; */
     width: 80%;
     max-width: 80%;
     height: auto;
-    margin-top: 5em;
+    margin-top: 0rem;
     margin-bottom: 15rem;
-    
 }
 .secondTitulo{
     font-family: 'Saira Condensed', sans-serif;
@@ -623,7 +621,6 @@ a{
     font-size: 1.5em;
     font-weight: 500;
     text-shadow: rgba(255, 255, 255, 0.5) -0.05rem 0.075rem 0.3rem;
-    /* background-color: rgba(200,200,220,1); */
 }
 .cards{
     position: relative;
@@ -883,7 +880,7 @@ a{
 }
 .explainContent{
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 0.45em;
+    font-size: 0.5em;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -1472,8 +1469,8 @@ textarea.fifthFormField{
         font-size: 2.2em;
     }
     .cardSelected{
-        width: 14.5em;
-        height: 19em;
+        width: 13.5rem;
+        height: 18rem;
         left: 130%;
     }
     .stairFirst{
@@ -1565,6 +1562,14 @@ textarea.fifthFormField{
         }
     }
 
+    .explainContent{
+        top: -4rem;
+        font-size: 0.8em;
+
+    }
+    .secondTitulo{
+        font-size: 3EM;
+    }
 }
 
 @media screen and (max-width:2300px) {
@@ -1599,8 +1604,8 @@ textarea.fifthFormField{
         font-size: 2.2em;
     }
     .cardSelected{
-        width: 12.5em;
-        height: 15em;
+        width: 11.5rem;
+        height: 14rem;
         left: 125%;
     }
     @keyframes cardClickFirst {
@@ -1667,6 +1672,12 @@ textarea.fifthFormField{
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
+
+
+    .explainContent{
+        top: -3rem;
+
+    }
     
 }
 @media screen and (max-width:1900px) {
@@ -1711,8 +1722,8 @@ textarea.fifthFormField{
         font-size: 2em;
     }
     .cardSelected{
-        width: 10.5em;
-        height: 13em;
+        width: 9.5rem;
+        height: 12rem;
         /* left: 105%; */
     }
     .stairFirst{
@@ -1740,7 +1751,19 @@ textarea.fifthFormField{
     
     }
 }
+@media screen and (max-width:1600px) {
 
+    .second{
+        margin-bottom: 10rem;
+    }
+    .explainContent{
+        font-size: 0.65em;
+
+    }
+    .secondTitulo{
+        font-size: 2.5em;
+    }
+}
 
 @media screen and (max-width:1600px) {
     .first{
@@ -1785,8 +1808,8 @@ textarea.fifthFormField{
         font-size: 1.5em;
     }
     .cardSelected{
-        width: 8.5em;
-        height: 10.5em;
+        width: 7.5rem;
+        height: 9.5rem;
         /* left: 105%; */
     }
     .stairFirst{
@@ -1871,8 +1894,6 @@ textarea.fifthFormField{
 
     .cardSelected{
         font-size: 1.1em;
-        width: 11em;
-        height: 13.5em;
         left: 115%;
     }
     @keyframes cardClickFirst {
@@ -1939,6 +1960,10 @@ textarea.fifthFormField{
             transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
         }
     }
+    .explainContent{
+        top: -2rem;
+
+    }
 }
 @media screen and (max-width:1200px) {
 
@@ -1946,35 +1971,8 @@ textarea.fifthFormField{
         height: 35rem;
 
     }
-    /* .typing {
-        font-size: 1em;
-        left:5.1rem;
-        top: 6rem;
-        width: 20rem;
-        border-right: 3px solid rgb(0, 0, 0);
-    }
-    .typingo{
-        font-size: 0.9em;
-        height: 1em;
-        left:10rem;
-        top: 10rem;
-        width: 6rem;
-        border-right: 3px solid rgb(0, 0, 0);
-    }
 
 
-    .detallito{
-        transform: scale(1);
-        top: -1.8rem;
-    } */
-
-
-    .cardSelected{
-        font-size: 1.1em;
-        width: 11em;
-        height: 13.5em;
-        /* left: 96%; */
-    }
 }
 
 @media screen and (max-width:1100px) {
@@ -2093,8 +2091,8 @@ textarea.fifthFormField{
     }
     .cardSelected{
         font-size: 1.1em;
-        width: 11em;
-        height: 13.5em;
+        width: 7rem;
+        height: 8.5rem;
         left: 110%;
     }
     @keyframes cardClickFirst {
@@ -2171,71 +2169,8 @@ textarea.fifthFormField{
 
 
 
-    @keyframes cardClickFirst {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 11rem;
-            top: 17rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-             left: 92%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickSecond {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 9rem;
-            top: 13.5rem;
-        }
-        to{
-            top: 1.45rem;
-            left: 92%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickThird {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 7rem;
-            top: 10rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 92%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickQuarter {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 5rem;
-            top: 6.5rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 92%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-    @keyframes cardClickFifth {
-        from{transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
-            top: 3rem;
-        }
-        to{
-            transform: scale(0.7);
-            top: 1.45rem;
-            left: 92%;
-            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
-        }
-    }
-
-
-
-
     .explainContent{
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
     
 
@@ -2277,25 +2212,6 @@ textarea.fifthFormField{
     }
 
 
-
-
-
-
-
-
-
-    .cardSelected{
-        font-size: 1.05em;
-        width: 10em;
-        height: 12.5em;
-        /* left: 92%; */
-    }
-    .card{
-        font-size: 1.1em;
-        width: 7.75rem;
-        height: 9.5rem;
-        
-    }
 
 
     .quarter{
@@ -2343,7 +2259,13 @@ textarea.fifthFormField{
         top: 3rem;
     
     }
-    
+    .explainContent{
+        top: -1rem;
+        font-size: 0.45em;
+    }
+    .secondTitulo{
+        font-size: 2em;
+    }
 }
 
 
@@ -2380,8 +2302,8 @@ textarea.fifthFormField{
 
     .cardSelected{
         font-size: 1.05em;
-        width: 9.75em;
-        height: 12em;
+        width: 6rem;
+        height: 8rem;
         /* left: 90%; */
     }
     .card{
@@ -2406,11 +2328,13 @@ textarea.fifthFormField{
         left: -4.5rem;
     }
 
-
+    .second{
+        margin-bottom: 3rem;
+    }
     .cardSelected{
         font-size: 1em;
-        width: 9.5em;
-        height: 11.5em;
+        width: 6rem;
+        height: 7.75rem;
         left: 105%;
     }
     .card{
@@ -2535,9 +2459,6 @@ textarea.fifthFormField{
 
 
     .cardSelected{
-        font-size: 1em;
-        width: 9.5em;
-        height: 11.5em;
         left: 95%;
     }
 
@@ -2615,7 +2536,7 @@ textarea.fifthFormField{
 
 
     .explainContent{
-        font-size: 0.25em;
+        font-size: 0.4em;
     
     }
 
@@ -2650,14 +2571,14 @@ textarea.fifthFormField{
 
 
     .cardSelected{
-        font-size: 0.95em;
-        width: 9em;
-        height: 11em;
+        font-size: 1em;
+        width: 6rem;
+        height: 7rem;
         left: 80%;
     }
     .card{
         font-size: 1em;
-        width: 5.5rem;
+        width: 6rem;
         height: 7.5rem;
         
     }
@@ -2728,7 +2649,10 @@ textarea.fifthFormField{
         }
     }
 
+    .explainContent{
+        top: 0rem;
 
+    }
 
 }
 @media screen and (max-width:500px) {
@@ -2776,8 +2700,6 @@ textarea.fifthFormField{
 
     .cardSelected{
         font-size: 0.9em;
-        width: 8.5em;
-        height: 10em;
         left: 77%;
     }
 
@@ -2945,8 +2867,6 @@ textarea.fifthFormField{
 
     .cardSelected{
         font-size: 0.85em;
-        width: 8em;
-        height: 9.5em;
         left: 75%;
     }
 
@@ -3028,8 +2948,6 @@ textarea.fifthFormField{
 
     .cardSelected{
         font-size: 0.8em;
-        width: 8em;
-        height: 9.5em;
     }
 
 
