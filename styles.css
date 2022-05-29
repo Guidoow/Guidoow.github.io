@@ -821,11 +821,11 @@ a{
 /*                                     THIS    THIS     THIS           */
 /*                                  THIS    THIS   THIS    THIS        */
 .cardOnQuarter{
-    animation: cardClick4 1 ease 1s;      
+    animation: cardClickQuarter 1 ease 1s;      
     /* animation-fill-mode: forwards; */
 }
 .cardOffQuarter{
-    animation: cardClick4 1 reverse ease 1.2s;      
+    animation: cardClickQuarter 1 reverse ease 1.2s;      
     /* animation-fill-mode: forwards; */
 }
 @keyframes cardClickQuarter {
@@ -1500,8 +1500,8 @@ textarea.fifthFormField{
     @keyframes cardClickFirst {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 4rem;
-            top: 17rem;
+            left: 11rem;
+            top: 23rem;
         }
         to{
             transform: scale(0.7);
@@ -1513,8 +1513,8 @@ textarea.fifthFormField{
     @keyframes cardClickSecond {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
-            top: 13.5rem;
+            left: 9rem;
+            top: 18rem;
         }
         to{
             top: 1.45rem;
@@ -1525,8 +1525,8 @@ textarea.fifthFormField{
     @keyframes cardClickThird {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 2rem;
-            top: 10rem;
+            left: 7rem;
+            top: 13rem;
         }
         to{
             transform: scale(0.7);
@@ -1538,8 +1538,8 @@ textarea.fifthFormField{
     @keyframes cardClickQuarter {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 1rem;
-            top: 6.5rem;
+            left: 5rem;
+            top: 8rem;
         }
         to{
             transform: scale(0.7);
@@ -1551,7 +1551,7 @@ textarea.fifthFormField{
     @keyframes cardClickFifth {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 0rem;
+            left: 3rem;
             top: 3rem;
         }
         to{
@@ -1611,8 +1611,8 @@ textarea.fifthFormField{
     @keyframes cardClickFirst {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 4rem;
-            top: 17rem;
+            left: 11rem;
+            top: 23rem;
         }
         to{
             transform: scale(0.7);
@@ -1624,8 +1624,8 @@ textarea.fifthFormField{
     @keyframes cardClickSecond {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
-            top: 13.5rem;
+            left: 9rem;
+            top: 18rem;
         }
         to{
             top: 1.45rem;
@@ -1636,8 +1636,8 @@ textarea.fifthFormField{
     @keyframes cardClickThird {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 2rem;
-            top: 10rem;
+            left: 7rem;
+            top: 13rem;
         }
         to{
             transform: scale(0.7);
@@ -1649,8 +1649,8 @@ textarea.fifthFormField{
     @keyframes cardClickQuarter {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 1rem;
-            top: 6.5rem;
+            left: 5rem;
+            top: 8rem;
         }
         to{
             transform: scale(0.7);
@@ -1662,7 +1662,7 @@ textarea.fifthFormField{
     @keyframes cardClickFifth {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 0rem;
+            left: 3rem;
             top: 3rem;
         }
         to{
@@ -1750,6 +1750,70 @@ textarea.fifthFormField{
         top: 3rem;
     
     }
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 11rem;
+            top: 19rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 9rem;
+            top: 15rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 7rem;
+            top: 11rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 5rem;
+            top: 7rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
 }
 @media screen and (max-width:1600px) {
 
@@ -1810,12 +1874,11 @@ textarea.fifthFormField{
     .cardSelected{
         width: 7.5rem;
         height: 9.5rem;
-        /* left: 105%; */
     }
     .stairFirst{
         left: 11rem;
         top: 17rem;
-    
+
     }
     .stairSecond{
         left: 9rem;
@@ -1836,7 +1899,71 @@ textarea.fifthFormField{
         top: 3rem;
     
     }
- 
+    @keyframes cardClickFirst {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 11rem;
+            top: 17rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickSecond {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 9rem;
+            top: 13.5rem;
+        }
+        to{
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickThird {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 7rem;
+            top: 10rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickQuarter {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 5rem;
+            top: 6.5rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    @keyframes cardClickFifth {
+        from{
+            transform: rotateX(-15deg) rotateY(25deg);
+            left: 3rem;
+            top: 3rem;
+        }
+        to{
+            transform: scale(0.7);
+            top: 1.45rem;
+            left: 125%;
+            transform: scale(0.7) rotatex(10deg) rotateZ(3deg) rotateY(-30deg);
+        }
+    }
+    
   
 }
 
@@ -1899,7 +2026,7 @@ textarea.fifthFormField{
     @keyframes cardClickFirst {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 4rem;
+            left: 11rem;
             top: 17rem;
         }
         to{
@@ -1912,7 +2039,7 @@ textarea.fifthFormField{
     @keyframes cardClickSecond {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
+            left: 9rem;
             top: 13.5rem;
         }
         to{
@@ -1924,7 +2051,7 @@ textarea.fifthFormField{
     @keyframes cardClickThird {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 2rem;
+            left: 7rem;
             top: 10rem;
         }
         to{
@@ -1937,7 +2064,7 @@ textarea.fifthFormField{
     @keyframes cardClickQuarter {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 1rem;
+            left: 5rem;
             top: 6.5rem;
         }
         to{
@@ -1950,7 +2077,7 @@ textarea.fifthFormField{
     @keyframes cardClickFifth {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 0rem;
+            left: 3rem;
             top: 3rem;
         }
         to{
@@ -2098,7 +2225,7 @@ textarea.fifthFormField{
     @keyframes cardClickFirst {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 4rem;
+            left: 11rem;
             top: 17rem;
         }
         to{
@@ -2111,7 +2238,7 @@ textarea.fifthFormField{
     @keyframes cardClickSecond {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 3rem;
+            left: 9rem;
             top: 13.5rem;
         }
         to{
@@ -2123,7 +2250,7 @@ textarea.fifthFormField{
     @keyframes cardClickThird {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 2rem;
+            left: 7rem;
             top: 10rem;
         }
         to{
@@ -2136,7 +2263,7 @@ textarea.fifthFormField{
     @keyframes cardClickQuarter {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 1rem;
+            left: 5rem;
             top: 6.5rem;
         }
         to{
@@ -2149,7 +2276,7 @@ textarea.fifthFormField{
     @keyframes cardClickFifth {
         from{
             transform: rotateX(-15deg) rotateY(25deg);
-            left: 0rem;
+            left: 3rem;
             top: 3rem;
         }
         to{
@@ -2304,7 +2431,6 @@ textarea.fifthFormField{
         font-size: 1.05em;
         width: 6rem;
         height: 8rem;
-        /* left: 90%; */
     }
     .card{
         font-size: 1.1em;
@@ -2771,30 +2897,25 @@ textarea.fifthFormField{
 
 
     .stairFirst{
-        position: absolute;
         left: 0rem;
         top: 17rem;
     
     }
     .stairSecond{
-        position: absolute;
         left: -.25rem;
         top: 13.5rem;
     
     }
     .stairThird{
-        position: absolute;
         left: -.5rem;
         top: 10rem;
     }
     .stairQuarter{
-        position: absolute;
         left: -.75rem;
         top: 6.5rem;
     
     }
     .stairFifth{
-        position: absolute;
         left: -1rem;
         top: 3rem;
     

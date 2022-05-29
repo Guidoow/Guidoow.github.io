@@ -46,15 +46,21 @@ window.onload = function(){
     // console.log(this)
 
     function clickCorrectPosition(){
+        function caa(param){
+            carton = document.querySelector("#"+param);
+            carton.classList.replace("cardSelected","card");
+            carton.classList.add("stair"+ param);
+            carton.classList.add("cardOff"+param);
+            carton.setAttribute("onclick","cardSelected.call(this,'empty')");
+        }
         for(i=0; i<myCards.length; i++){
-            document.querySelector(".stair"+myCards[i]).click();
+            
+            // console.log(i*1000);
+            setTimeout(caa,(i*125),myCards[i]);
         };
-        document.querySelector(".cardOn"+myCards[4]).click();
-
-        
     }
 
-    clickCorrectPosition();
+    setTimeout(clickCorrectPosition,300);
 
 
     var horaInit = new Date();
@@ -196,10 +202,6 @@ function cardBackPosition(){
         //First = CSS   Second = HTML   Third  = JS   Quarter = Django   Fifth = .python
 function cardSelected(position){
 
-    globalThis.cardSelectedContainer = document.querySelector(".explainContent");
-    // console.log(cardSelectedContainer);
-    globalThis.cardsContainer = document.querySelector(".cards");
-    // console.log(cardsContainer);
 
     var este=this;
 
@@ -255,7 +257,7 @@ function cardSelected(position){
         este.classList.replace("stair"+ classNumber,"cardOn"+classNumber);
         
         if(este.classList.contains("cardOff"+classNumber)){
-            
+            este.classList.remove("cardOff"+classNumber);
         }else{
             // console.log("El elemento "+ classNumber+" No contiene la clase cardOffNumero. Probablemente sea la primera vez que se clickea.")}
         };
@@ -316,6 +318,7 @@ function cardSelected(position){
                             downerOfClickeada();
                         }else{
                             // console.log("No se encontro ninguna carta clickeada...");
+                            continue
                         }
                     }catch(ReferenceError){
                         // console.log("Hubo un error comun:");
