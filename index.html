@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            
+        <title> GuidHub </title>
+
+        <link rel="shortcut icon" href="images/coding.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Saira+Condensed&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+
+
+        <script src="script.js"></script>
+
+
+    </head>
+    
+    <body>
+        
+
+        <main>    
+    
+
+            <article class="first">
+        
+                <div class="firstColumn">
+        
+                    <div class="typing"> Guido Morán </div>
+                    <div class="typingo" onclick="testTime()"> Developer </div>
+        
+                </div>
+        
+        
+                <div class="detallito">
+                    <img src='images/matrixGIF.gif' alt="" class="matrix">
+                    <img src='images/devguy.png' alt="" class="imagex">
+                        <div class="coffeSprite">
+                            <img src='images/sprite1.png' alt="" class="sprite1">
+                            <img src='images/sprite2.png' alt="" class="sprite2">
+                        </div>
+                    
+        
+        
+        
+                    <div class="menuDisplay menuAnimationInit" >
+        
+                        <div class="panel-top"> DEF menu():</div>
+        
+                        <div class="panel-nav">
+                            
+                            <a href="#skills" class="">skills</a>
+                            <a href="#me" class="">me</a>
+                            <a href="#projects" class="">projects</a>
+                            <a href="#contact" class="">contact</a>
+                        </div>
+                    </div>
+                    <div class="hoverForMenuDisplay" onclick="menuDisplayActivator.call(this)" id="menuDisplayActivator"></div>
+        
+                </div>
+        
+                
+                
+            </article>
+        
+            
+            <article onmouseov="mouse()" class="second">
+        
+                <div class="secondTitulo" id="skills">SKILLS</div>
+        
+                <div class="cards">
+                    
+                    <div class="card stairFifth" onclick="cardSelected.call(this,'empty')" id="Fifth">
+                        <div class="cardText">PYTHON</div>
+                        <div class="cardImg"><img src='images/python.png' alt=""></div>
+                    </div>
+                    <div class="card stairQuarter" onclick="cardSelected.call(this,'empty')" id="Quarter">
+                        <div id="django" class="cardText">DJANGO</div>
+                        <div class="cardImg"><img src='images/django.png' alt=""></div>
+                    </div>
+                    <div class="card stairThird" onclick="cardSelected.call(this,'empty')" id="Third">
+                        <div class="cardText">JAVASCRIPT</div>
+                        <div class="cardImg"><img src='images/JS.png' alt=""></div>
+                    </div>
+                    <div class="card stairSecond" onclick="cardSelected.call(this,'empty')" id="Second">
+                        <div class="cardText">HTML</div>
+                        <div class="cardImg"><img src='images/html.png' alt=""></div>
+                    </div>
+                    <div class="card stairFirst" onclick="cardSelected.call(this,'empty')" id="First">
+                        <div class="cardText">CSS</div>
+                        <div class="cardImg"><img src='images/css.png' alt=""></div>
+                    </div>
+        
+                </div>
+        
+        
+                <div id="explain" class="explain">
+                    
+                    <div class="explainContent">
+        
+                        <div class="explainContentHeader">
+                                
+                        </div>
+                        <div class="explainContentText">
+                            Pick a card to show the info here!
+                        </div>
+        
+                    </div>
+                </div>
+        
+        
+            </article>
+        
+            <article  id="me" class="third">
+        
+                <div class="thirdTitulo">ME</div>
+        
+                <div class="descripcionText"> <img onclick="displayMap()" src='images/mapp.png' alt="">
+                                            Guido Morán  20 years old. <br> La Plata, Buenos Aires, Argentina. <br>
+                                            Studying and developing as "self taugthed" or freelancer since 2022; <br>
+                                             I started in depth with <a href="#explain" onclick="cardSelected('Fifth')" class="redirect">Python</a> 
+                                             from his docs, i learned about basic syntax, P.O.O, his inheritance, etc (this was fundamental to Javascript)
+                                             to some basic sql CRUD operations. <br>Then, study django basics, and
+                                              <a href="#explain" onclick="cardSelected('Second')" class="redirect">HTML</a>
+                                             and <a href="#explain" onclick="cardSelected('First')" class="redirect">CSS</a> in depth, in less time,
+                                             thanks to his simplicity and how intuitive these languages are. Finally, to this day, i started 
+                                            <a href="#explain" onclick="cardSelected('Third')" class="redirect">JS</a>, its syntax,
+                                             his window object, and his properties like the manage of dom, events, among others.                            
+                                        
+                </div>
+        
+                <div class="map" id="map"></div>
+        
+            </article>
+        
+            <article class="quarter" id="projects">
+        
+                <div class="quarterList">
+                    
+                    <a class="listBox1" >___cats___</a>
+                    <a class="listBox2" >SECTION UNDER</a>
+                    <a class="listBox3" >CONSTRUCTION</a>
+                    <a class="listBox4" >for new</a>
+                    <a class="listBox5" >projects soon:)</a>
+        
+                </div>
+                 
+                <!-- <div class="quarterFrame">
+        
+        
+                </div> -->
+                
+            </article>
+        
+        
+            <article class="fifth" id="contact">
+        
+                <a class="fifthSender">sending</a>
+        
+                <div class="fifthTop"> CONTACT ME </div> 
+        
+                <form class="fifthForm" action="/" method="post">
+        
+                    <input class="fifthFormField" type="text" placeholder="NAME" name="name">
+        
+                    <input class="fifthFormField" type="email" placeholder="EMAIL" name="email">
+        
+                    <textarea class="fifthFormField" cols="25" rows="2" placeholder="MESSAGE" name="message"></textarea>
+                    
+                    <input class="fifthFormField chikitu" id="submitButton" type="button" value="SEND" onclick="send()">
+                    
+                </form>
+                <div class="fifthMore">
+                    <a onclick="clippin.call(this)" target="_blank"><img class="fifthMoreImg" id="m" src='images/mail.png'></a>OR
+                    <a href="https://github.com/Guidoow" target="_blank"><img class="fifthMoreImg" src='images/github.png'></a>
+        
+                </div>
+        
+        
+        
+                </div>
+        
+            </article>
+        
+        </main>
+    
+
+    </body>
+
+</html> 
+
+
